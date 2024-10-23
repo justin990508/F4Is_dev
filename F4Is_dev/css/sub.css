@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SCDream4';
+    src: url(../fonts/SCDream4.woff) format('woff');
+   }
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/*font-family: 'Montserrat', sans-serif;*/
+body {font-family: 'SCDream4', sans-serif;font-size: 14px;color: #333;}
+.wrap {width: 100%; overflow: hidden;}
+/* 공통 */
+.inner {width: 1400px; margin: 0 auto;}
+.text .title {font-family: 'Montserrat',sans-serif; font-size: 15px; letter-spacing: 1px; text-transform: uppercase; font-weight: bold; }
+.text p {font-size: 30px;line-height: 1.2; margin: 40px 0;}
+.text a {display: inline-block; padding: 5px 15px; border: 1px solid #333; border-radius: 20px; font-size: 12px; font-family: 'Montserrat',sans-serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; transition: all 0.2s;}
+.text a:hover, .text a:focus {border: 1px solid transparent; border-bottom: 1px solid #333; padding: 5px 18px; transition: all 0.2s; background: #f2f0eb;}
+
+/* header */
+header {width: 100%;background: #213135;position: fixed;left: 0;top: 0;z-index: 100;padding: 40px 0 25px;color: #fff;font-family: 'Montserrat', sans-serif;font-weight: bold;text-align: center;text-transform: uppercase;transition: all 0.4s;}
+header .inner {width: 90%;margin: 0 auto;}
+header .inner .gnbBtn {display: block;float: left;width: 32px;height: 12px;position: relative;margin-top: 15px;transition: all 0.4s;z-index: 200;}
+header .inner .gnbBtn span {background: #fff;width: 100%;height: 3px;display: block;position: absolute;left: 0;}
+header .inner .gnbBtn span.a {top: 0;}
+header .inner .gnbBtn span.b {bottom: 0;}
+header .inner .logo {display: inline-block;font-size: 25px;transition: all 0.4s;}
+header .inner .contact { display: block;float: right;margin-top: 10px;transition: all 0.4s;}
+
+/* header 모션 */
+header.on {padding: 20px 0 18px; transition: all 0.4s;}
+header.on .logo {font-size: 22px;transition: all 0.4s;}
+header.on .gnbBtn, header.on .contact {margin-top: 4px;transition: all 0.4s;}
+header.on nav.gnb {width: 300px;transition: all 0.4s;}
+header.on nav.gnb ul {width: 50%;transition: all 0.4s;}
+nav.gnb.on {width: 400px;left: 0;}
+
+/* gnb */
+nav.gnb {position: absolute; left: -1000px; top: 0; width: 0; height: 100vh;background: #000; padding: 95px 50px; box-sizing: border-box;text-align: left; transition: all 0.7s; overflow: hidden;}
+nav.gnb ul {position: absolute; width: 60%; left: 50%; top: 50%; transform: translate(-50%,-50%); border-top: 1px solid #555; border-bottom: 1px solid #555; padding: 20px 0;}
+nav.gnb ul li a {line-height: 50px; font-size: 22px; text-align: left;}
+nav.gnb ul li a span {text-transform: none; font-family: 'Nanum Myeongjo', serif; font-style: italic; font-size: 20px;}
+
+/*contents*/
+.contents {width: 1400px; margin: 300px auto; text-align: center; }
+.contents div {line-height: 1.5; width: 100%; overflow: hidden; margin: o auto;}
+.contents div p.img {width: 100%; overflow: hidden; margin: 50px auto;}
+.contents div p.img img {width: 25%; height: auto;}
+.contents p:hover {cursor: pointer; text-decoration: underline;}
+.contents h2 {font-size: 24px; text-transform: bold;}
+.contents h3 {font-size: 18px;}
