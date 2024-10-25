@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="../css/noticeboard.css">
     <style>
         .details {
-            display: none;
+            display: none; /* 처음에 내용 숨기기 */
             margin-top: 10px;
             padding: 10px;
             background-color: #f9f9f9;
@@ -34,9 +34,9 @@
 
                 <!-- 게시글 1 -->
                 <div class="list_item">
-                    <div class="num">5</div>
+                    <div class="num">1</div>
                     <div class="title">
-                        <a href="javascript:void(0);" onclick="toggleDetails(1)">제목이 들어갑니다.</a>
+                        <a href="javascript:void(0);" onclick="toggleDetails(1)"> 공지사항 1</a>
                     </div>
                     <div class="writer">김아름</div>
                     <div class="date">2022.12.16</div>
@@ -46,9 +46,9 @@
 
                 <!-- 게시글 2 -->
                 <div class="list_item">
-                    <div class="num">4</div>
+                    <div class="num">2</div>
                     <div class="title">
-                        <a href="javascript:void(0);" onclick="toggleDetails(2)">제목이 들어갑니다.</a>
+                        <a href="javascript:void(0);" onclick="toggleDetails(2)"> 공지사항 2</a>
                     </div>
                     <div class="writer">김아름</div>
                     <div class="date">2022.12.16</div>
@@ -60,12 +60,36 @@
                 <div class="list_item">
                     <div class="num">3</div>
                     <div class="title">
-                        <a href="javascript:void(0);" onclick="toggleDetails(3)">제목이 들어갑니다.</a>
+                        <a href="javascript:void(0);" onclick="toggleDetails(3)"> 공지사항 3</a>
                     </div>
                     <div class="writer">김아름</div>
                     <div class="date">2022.12.16</div>
                     <div class="count">33</div>
                     <div id="details3" class="details">게시글 3의 내용입니다.</div>
+                </div>
+
+                <!-- 게시글 4 -->
+                <div class="list_item">
+                    <div class="num">4</div>
+                    <div class="title">
+                        <a href="javascript:void(0);" onclick="toggleDetails(4)"> 공지사항 4</a>
+                    </div>
+                    <div class="writer">김아름</div>
+                    <div class="date">2022.12.16</div>
+                    <div class="count">33</div>
+                    <div id="details4" class="details">게시글 4의 내용입니다.</div>
+                </div>
+
+                <!-- 게시글 5 -->
+                <div class="list_item">
+                    <div class="num">5</div>
+                    <div class="title">
+                        <a href="javascript:void(0);" onclick="toggleDetails(5)"> 공지사항 5</a>
+                    </div>
+                    <div class="writer">김아름</div>
+                    <div class="date">2022.12.16</div>
+                    <div class="count">33</div>
+                    <div id="details5" class="details">게시글 5의 내용입니다.</div>
                 </div>
 
                 <!-- 나머지 게시글들... -->
@@ -93,7 +117,7 @@
     <script>
         function toggleDetails(id) {
             var details = document.getElementById('details' + id);
-            if (details.style.display === 'none') {
+            if (details.style.display === 'none' || details.style.display === '') {
                 details.style.display = 'block';
             } else {
                 details.style.display = 'none';
