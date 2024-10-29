@@ -49,14 +49,14 @@ nav.gnb.on {width: 400px;left: 0;}
 nav.gnb {position: absolute; left: -1000px; top: 0; width: 0; height: 100vh;background: #000; padding: 95px 50px; box-sizing: border-box;text-align: left; transition: all 0.7s; overflow: hidden;}
 nav.gnb ul {position: absolute; width: 60%; left: 50%; top: 50%; transform: translate(-50%,-50%); border-top: 1px solid #555; border-bottom: 1px solid #555; padding: 20px 0;}
 nav.gnb ul li a {line-height: 50px; font-size: 22px; text-align: left;}
-nav.gnb ul li a span {text-transform: none; font-family: 'Nanum Myeongjo', serif; font-style: italic; font-size: 20px;}
+nav.gnb ul li a span {text-transform: none; font-style: italic; font-size: 14px;}
 
 
 /* contents */
 .contents {background: #fff; position: relative;z-index: 1; margin-bottom: 200px; overflow: hidden;}
 .contents .visual {width: 100vw;height: 100vh;position: relative;}
 .contents .visual .waves {width: 100vw; height: 100vh; object-fit: cover;position: absolute; top: 0;left: 0;}
-.contents .visual .title {width: 100%; position: absolute; ;left: 0; top: 50%; transform: translateY(-50%); font-family: 'Montserrat',sans-serif; font-weight: bold; text-align: center; font-size: 70px; color: #fff;text-transform: uppercase; text-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.contents .visual .waves img {width: 100%; position: relative; object-fit: fill; z-index: 100;}
 
 
 /* section.about */
