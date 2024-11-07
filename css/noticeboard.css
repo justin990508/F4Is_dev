@@ -50,7 +50,7 @@ nav.gnb.on {width: 400px;left: 0;}
 nav.gnb {position: absolute; left: -1000px; top: 0; width: 0; height: 100vh;background: #000; padding: 95px 50px; box-sizing: border-box;text-align: left; transition: all 0.7s; overflow: hidden;}
 nav.gnb ul {position: absolute; width: 60%; left: 50%; top: 50%; transform: translate(-50%,-50%); border-top: 1px solid #555; border-bottom: 1px solid #555; padding: 20px 0;}
 nav.gnb ul li a {line-height: 50px; font-size: 22px; text-align: left;}
-nav.gnb ul li a span {text-transform: none; font-family: 'Nanum Myeongjo', serif; font-style: italic; font-size: 20px;}
+nav.gnb ul li a span {text-transform: none; font-style: italic; font-size: 14px;}
 
 .list_item .details {
     display: none;
@@ -66,34 +66,6 @@ nav.gnb ul li a span {text-transform: none; font-family: 'Nanum Myeongjo', serif
     padding-top: 30px;
     margin-bottom: 30px;
     font-size: 20px;
-}
-
-
-
-.bt_wrap {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0;
-    text-align: center;
-}
-
-.bt_wrap a {
-    display: inline-block;
-    min-width: 80px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 2px;
-    font-size: 0;
-}
-
-.bt_wrap a:first-child {
-    margin-left: 0;
-}
-
-.bt_wrap a.on {
-    background: #000;
-    color: #fff;
 }
 
 .board_list {
