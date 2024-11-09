@@ -72,7 +72,7 @@ section.approach .inner .list {width: 48%;}
 section.approach .inner .list li {margin-bottom: 30px;}
 section.approach .inner .list li a {display: block; width: 100%; height: 100%;border-radius: 10px; overflow: hidden; position: relative;}
 section.approach .inner .list li a span {display: none;}
-section.approach .inner .list li a img {width: 100%;}
+section.approach .inner .list li a img {width: 50%;}
 section.approach .inner .fix {position: absolute; width: 45%; height: 100%; right: 0; top: 0;}
 section.approach .inner .fix .text { position: absolute; bottom: 10%;}
 
