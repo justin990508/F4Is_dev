@@ -25,7 +25,7 @@ button:focus {outline: none}
 
 /* contents */
 .contents {width: 100%; padding: 120px 0;}
-.contents .mainTxt {width: 1170px;margin: 0 auto;;overflow: hidden;color: #000;position: relative;padding-bottom: 150px;}
+.contents .mainTxt {width: 1170px;margin: 0 auto;;overflow: hidden;color: #000;position: relative;padding-bottom: 0px;}
 .contents .mainTxt::after {content: '”';font-size: 300px;font-weight: 400;position: absolute;left: 0;top: 60px;}
 .contents .mainTxt::before {content: '';width: 95px;height: 95px;background: #00ac4a;position: absolute;left: 70px;top: 130px;border-radius: 50%;}
 .contents .mainTxt h3{float: left;font-size: 25px;font-weight: bold;width: 30%;line-height: 1.2;}
@@ -39,3 +39,13 @@ button:focus {outline: none}
 .contents2 h2 {font-size: 24px; text-transform: bold;}
 .contents2 h3 {font-size: 18px;}
 .contents2 p {line-height: 2.3;}
+
+/* section.middle */
+.middle {position: relative;}
+.middle .slide2 li {width: 100%;height: 100vh; position: relative;}
+.middle .slide2 li img {width: 35%; position: absolute;right: 150px; top: 8%; opacity: 70%;}
+.middle .slide2 li .txt {position: absolute;left: 10%;top: 50%;transform: translateY(-50%);color: #000;font-size: 18px;}
+.middle .slide2 li .txt h3 {font-size: 64px;}
+.middle .slide2 li .txt a {display: inline-block;}
+.middle .slide2 li .txt a span {font-size: 14px;margin-left: 5px;}
+.middle .slide2 li .scroll {position: absolute;left: 50px;bottom: 10%;font-size: 14px;font-weight: bold;color: #101010;transform: rotate(-90deg);}
