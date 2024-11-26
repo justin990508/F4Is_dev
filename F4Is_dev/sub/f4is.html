@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4Is Main Page </title>
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/f4is.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/scrolla.jquery.min.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/f4is.js"></script>"
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="inner">
+                <a href="#" class="gnbBtn">
+                    <span class="a"></span>
+                    <span class="b"></span>
+                </a>
+                <a href="../index.html" class="logo">F4Is</a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="../sub/introduce.html"> About F4Is <span>F4Is 소개</span></a></li>
+                    <li><a href="../sub/noticeboard.html"> Calories <span>권장칼로리</span></a></li>
+                    <li><a href="../sub/assignment1.html"> F4Is <span>음식인식</span></a></li>
+                    <li><a href="../sub/noticeboard.html"> Notice <span>공지사항</span></a></li>
+                    <li><a href="../sub/developer.html"> Developers <span>개발자 소개</span></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="image-upload" id="image-upload">
+
+            <form method="post" enctype="multipart/form-data">
+                <div class="button">
+                    <label for="chooseFile">
+                        👉 이미지 업로드하기 👈
+                    </label>
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+
+            <div class="fileContainer">
+                <div class="fileInput">
+                    <p>FILE NAME: </p>
+                    <p id="fileName"></p>
+                </div>
+                <div class="buttonContainer">
+                    <div class="submitButton" id="submitButton">SUBMIT</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-show" id="image-show"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
