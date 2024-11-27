@@ -21,7 +21,7 @@ function showImage() {
     if (!calorieInfo) {
         calorieInfo = document.createElement("p");
         calorieInfo.setAttribute("id", "calorieInfo");
-        calorieInfo.style.paddingTop = "800px"; // 간격 추가
+        calorieInfo.style.paddingTop = "55%"; // 간격 추가
         imageContainer.appendChild(calorieInfo);
     }
     var randomCalories = Math.floor(Math.random() * 1000) + 700; // 700~1799 범위
